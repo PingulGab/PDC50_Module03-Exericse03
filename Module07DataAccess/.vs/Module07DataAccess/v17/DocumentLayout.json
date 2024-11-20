@@ -1,0 +1,127 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|c:\\pdc50 - module5 exercise 03\\pdc50_module05-exercise02\\module07dataaccess\\view\\employeepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|solutionrelative:view\\employeepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|c:\\pdc50 - module5 exercise 03\\pdc50_module05-exercise02\\module07dataaccess\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|c:\\pdc50 - module5 exercise 03\\pdc50_module05-exercise02\\module07dataaccess\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|solutionrelative:services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|c:\\pdc50 - module5 exercise 03\\pdc50_module05-exercise02\\module07dataaccess\\services\\databaseconnectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|solutionrelative:services\\databaseconnectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|c:\\pdc50 - module5 exercise 03\\pdc50_module05-exercise02\\module07dataaccess\\viewmodel\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D25503-77E2-43F4-85B8-2BB265D7BD81}|Module07DataAccess.csproj|solutionrelative:viewmodel\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-16T01:10:24.32Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeePage.xaml",
+              "DocumentMoniker": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\View\\EmployeePage.xaml",
+              "RelativeDocumentMoniker": "View\\EmployeePage.xaml",
+              "ToolTip": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\View\\EmployeePage.xaml",
+              "RelativeToolTip": "View\\EmployeePage.xaml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwCsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-16T05:32:43.899Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Services\\EmployeeService.cs",
+              "ToolTip": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "Services\\EmployeeService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAqwG0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:29:11.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseConnectionService.cs",
+              "DocumentMoniker": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\Services\\DatabaseConnectionService.cs",
+              "RelativeDocumentMoniker": "Services\\DatabaseConnectionService.cs",
+              "ToolTip": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\Services\\DatabaseConnectionService.cs",
+              "RelativeToolTip": "Services\\DatabaseConnectionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T03:26:20.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeViewModel.cs",
+              "DocumentMoniker": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\ViewModel\\EmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\EmployeeViewModel.cs",
+              "ToolTip": "C:\\PDC50 - Module5 Exercise 03\\PDC50_Module05-Exercise02\\Module07DataAccess\\ViewModel\\EmployeeViewModel.cs",
+              "RelativeToolTip": "ViewModel\\EmployeeViewModel.cs",
+              "ViewState": "AgIAAD8BAAAAAAAAAAAowFEBAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T05:24:19.204Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

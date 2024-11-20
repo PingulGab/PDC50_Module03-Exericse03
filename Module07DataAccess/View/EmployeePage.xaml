@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Module07DataAccess.ViewModel"
+             x:Class="Module07DataAccess.View.EmployeePage"
+             Title="EmployeePage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#F1F1F1">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
+
+            <Label Text="EMPLOYEE INFORMATION"
+                   FontSize="48"
+                   Margin="0, 0, 0, 0"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   FontFamily="Roboto"
+                   TextColor="#274156"/>
+
+            <Label FontSize="16"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,0">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Status: " TextColor="#525252"/>
+                        <Span Text="{Binding StatusMessage}"
+                  TextColor="#525252"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <SearchBar Placeholder="Search by Name, Address, Email, or Contact Number"
+                       Text="{Binding SearchText}"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="#FFFFFF"/>
+
+            <HorizontalStackLayout Spacing="50">
+                <Frame BackgroundColor="#FFFFFF" MaximumHeightRequest="500">
+                    <StackLayout>
+                        <ListView ItemsSource="{Binding FilteredEmployeeList}"
+                                  SelectedItem="{Binding SelectedEmployee}"
+                                  MinimumWidthRequest="500">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <ViewCell.View>
+                                            <StackLayout Orientation="Vertical" MinimumWidthRequest="500">
+                                                <!-- Label for Full Name -->
+                                                <Label Text="{Binding Name}"
+                                                       FontSize="21"/>
+
+                                                <!-- Label for Address -->
+                                                <Label FontSize="14">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="Address: " TextColor="#525252"/>
+                                                            <Span Text="{Binding Address}"
+                                                                  TextColor="#525252"/>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+
+                                                <!-- Label for Email -->
+                                                <Label FontSize="14">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="Email: " TextColor="#525252"/>
+                                                            <Span Text="{Binding Email}"
+                                                                  TextColor="#525252"/>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+
+                                                <!-- Label for Contact No -->
+                                                <Label FontSize="14">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="Contact Number: " TextColor="#525252"/>
+                                                            <Span Text="{Binding ContactNo}"
+                                                                  TextColor="#525252"/>
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+
+                                                <!-- Separator -->
+                                                <BoxView Color="#525252" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+                                                <!-- Gesture Recognizer -->
+                                                <StackLayout.GestureRecognizers>
+                                                    <TapGestureRecognizer
+                                                        Command="{Binding Source={RelativeSource AncestorType={x:Type local:EmployeeViewModel}}, Path=SelectedEmployeeCommand}"
+                                                        CommandParameter="{Binding .}"/>
+                                                </StackLayout.GestureRecognizers>
+                                            </StackLayout>
+                                        </ViewCell.View>
+                                    </ViewCell>
+                                </DataTemplate>
+
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Frame>
+
+                <Frame HorizontalOptions="End"
+                       MaximumHeightRequest="500"
+                       BackgroundColor="#FFFFFF">
+                    <StackLayout>
+                        <Label Text="EMPLOYEE DETAILS"
+                               Margin="0, 0, 0, 10"
+                               FontSize="18"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               FontFamily="Roboto"/>
+                        <Entry Placeholder="Name" Text="{Binding NewEmployeeName}"/>
+                        <Entry Placeholder="Address" Text="{Binding NewEmployeeAddress}"/>
+                        <Entry Placeholder="Email" Text="{Binding NewEmployeeEmail}"/>
+                        <Entry Placeholder="Contact Number" Text="{Binding NewEmployeeContactNo}"/>
+
+                        <VerticalStackLayout HorizontalOptions="Center">
+                            <Button Text="Add Employee"
+                                    Command="{Binding AddEmployeeCommand}"
+                                    WidthRequest="200"
+                                    BackgroundColor="#274156"
+                                    FontAttributes="Bold"
+                                    Margin="0, 20, 0, 0"
+                                    FontSize="12"
+                                    FontFamily="Roboto"/>
+
+                            <Button Text="Delete Employee"
+                                    Command="{Binding DeleteEmployeeCommand}"
+                                    WidthRequest="200"
+                                    BackgroundColor="#A41623"
+                                    FontAttributes="Bold"
+                                    Margin="0, 20, 0, 0"
+                                    FontSize="12"
+                                    FontFamily="Roboto"
+                                    IsEnabled="{Binding IsEmployeeSelected}"/>
+
+                            <Button Text="Update Employee"
+                                    Command="{Binding UpdateEmployeeCommand}"
+                                    WidthRequest="200"
+                                    BackgroundColor="#04724D"
+                                    FontAttributes="Bold"
+                                    Margin="0, 20, 0, 0"
+                                    FontSize="12"
+                                    FontFamily="Roboto"
+                                    IsEnabled="{Binding IsEmployeeSelected}"/>
+                        </VerticalStackLayout>
+                    </StackLayout>
+                </Frame>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center"
+                                   Spacing="20">
+
+                <Button Text="Load Data"
+                        Command="{Binding LoadDataCommand}"
+                        WidthRequest="200"
+                        BackgroundColor="#274156"
+                        FontAttributes="Bold"
+                        FontFamily="Roboto"
+                        FontSize="12"/>
+
+                <Button Text="Return to Main Menu"
+                        Clicked="OnViewMainPageClicked"
+                        WidthRequest="200"
+                        BackgroundColor="#A41623"
+                        FontAttributes="Bold"
+                        FontFamily="Roboto"
+                        FontSize="12"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
